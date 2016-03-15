@@ -497,7 +497,7 @@
      * to get the clicked item to the center, or will fire the custom event
      * the user passed in if the center item is clicked
      */
-    $(this).children().bind("click", function () {
+    $(this).on('click', 'div', function() {
       var itemPosition = $(this).data().currentPosition;
 
       if (options.imageNav == false) {
